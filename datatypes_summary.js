@@ -34,3 +34,27 @@ const myFunction = function(){
 }
 
 console.log(typeof bigNumber)
+
+// *************************Memory********************
+
+// stack(Primitive), Heap(Non-primitive)
+
+let myName = "Lakshay"
+
+let nickName = myName
+nickName = "Golu"
+
+console.log(myName)
+console.log(nickName)
+
+let UserOne = {
+    email: "abs@gmail.com",
+    upi: "abc@ybl"
+}
+
+let userTwo = UserOne
+
+userTwo.email = "lakshay@gmail.com"
+
+console.log(UserOne.email)
+console.log(userTwo.email)
